@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HABIT — Admin: Categorias (tela_05)</title>
+  <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+  <!-- tela_05 - Admin: Categorias -->
+  <div class="page">
+  <!-- HEADER (reutilizado em todas as telas) -->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__start">
+        <a href="tela_01_home.html" class="header__brand">HABIT</a>
+        <nav class="nav" aria-label="Navegação principal">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="tela_01_home.html" class="nav__link">Início</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Páginas</a></li>
+            <li class="nav__item"><a href="tela_03_destaques.html" class="nav__link">Destaques</a></li>
+            <li class="nav__item"><a href="tela_04_newsletter.html" class="nav__link">Assinar</a></li>
+            <li class="nav__item"><a href="tela_05_admin_categorias.html" class="nav__link nav__link--active">Admin</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__end">
+        <form class="search" role="search">
+          <input class="search__input" type="search" placeholder="Buscar...">
+          <button class="search__button button button--secondary" type="submit">Buscar</button>
+        </form>
+        <a href="tela_12_login.html" class="button button--secondary">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page__main">
+      <div class="admin">
+        <aside class="admin__sidebar">
+          <nav class="menu" aria-label="Menu administrativo">
+            <h2 class="menu__title">Menu</h2>
+            <ul class="menu__list">
+              <li class="menu__item"><a href="tela_05_admin_categorias.html" class="menu__link menu__link--active">Categorias</a></li>
+              <li class="menu__item"><a href="tela_06_admin_criar_post.html" class="menu__link">Criar Post</a></li>
+              <li class="menu__item"><a href="tela_07_admin_escolhas_editor.html" class="menu__link">Escolhas do Editor</a></li>
+              <li class="menu__item"><a href="tela_08_admin_usuarios.html" class="menu__link">Usuários</a></li>
+              <li class="menu__item"><a href="tela_09_admin_fila_revisao.html" class="menu__link">Fila de revisão</a></li>
+              <li class="menu__item"><a href="tela_10_admin_fila_comentarios.html" class="menu__link">Fila de comentários</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <div class="admin__content">
+          <div class="stats">
+            <div class="stat"><span class="stat__label">Posts</span><span class="stat__value">128</span></div>
+            <div class="stat"><span class="stat__label">Visualizações</span><span class="stat__value">54k</span></div>
+            <div class="stat"><span class="stat__label">Inscritos</span><span class="stat__value">12k</span></div>
+            <div class="stat"><span class="stat__label">Pendências</span><span class="stat__value">7</span></div>
+          </div>
+          <div class="panel panel--admin">
+            <div class="panel__header">
+              <h1 class="panel__title">Categorias</h1>
+            </div>
+            <div class="panel__body">
+              <div class="panel__search">
+                <input class="form__input" type="search" placeholder="Buscar categorias...">
+              </div>
+              <div class="data-list">
+                <div class="data-list__head"><span class="data-list__heading">Categoria</span></div>
+            <div class="data-list__row">
+              <span class="data-list__label">Categoria #1</span>
+              <div class="data-list__actions"><button class="button button--secondary button--sm">Editar</button> <button class="button button--danger button--sm">Excluir</button></div>
+            </div>
+            <div class="data-list__row">
+              <span class="data-list__label">Categoria #2</span>
+              <div class="data-list__actions"><button class="button button--secondary button--sm">Editar</button> <button class="button button--danger button--sm">Excluir</button></div>
+            </div>
+            <div class="data-list__row">
+              <span class="data-list__label">Categoria #3</span>
+              <div class="data-list__actions"><button class="button button--secondary button--sm">Editar</button> <button class="button button--danger button--sm">Excluir</button></div>
+            </div>
+            <div class="data-list__row">
+              <span class="data-list__label">Categoria #4</span>
+              <div class="data-list__actions"><button class="button button--secondary button--sm">Editar</button> <button class="button button--danger button--sm">Excluir</button></div>
+            </div>
+            <div class="data-list__row">
+              <span class="data-list__label">Categoria #5</span>
+              <div class="data-list__actions"><button class="button button--secondary button--sm">Editar</button> <button class="button button--danger button--sm">Excluir</button></div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <!-- FOOTER (reutilizado em todas as telas) -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__tags" aria-label="Tags">
+        <a href="#" class="chip">Instagram</a>
+        <a href="#" class="chip">Work</a>
+        <a href="#" class="chip">Bags</a>
+        <a href="#" class="chip">Lamp</a>
+        <a href="#" class="chip">Books</a>
+      </nav>
+      <p class="footer__copyright">© 2025 Meu Site • Meu site</p>
+    </div>
+  </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HABIT — Início (tela_01)</title>
+  <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+  <!-- tela_01 - Home (pagina inicial) -->
+  <div class="page">
+  <!-- HEADER (reutilizado em todas as telas) -->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__start">
+        <a href="tela_01_home.html" class="header__brand">HABIT</a>
+        <nav class="nav" aria-label="Navegação principal">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="tela_01_home.html" class="nav__link nav__link--active">Início</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Páginas</a></li>
+            <li class="nav__item"><a href="tela_03_destaques.html" class="nav__link">Destaques</a></li>
+            <li class="nav__item"><a href="tela_04_newsletter.html" class="nav__link">Assinar</a></li>
+            <li class="nav__item"><a href="tela_05_admin_categorias.html" class="nav__link">Admin</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__end">
+        <form class="search" role="search">
+          <input class="search__input" type="search" placeholder="Buscar...">
+          <button class="search__button button button--secondary" type="submit">Buscar</button>
+        </form>
+        <a href="tela_12_login.html" class="button button--secondary">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page__main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Navegue por tópicos de interesse</h1>
+          <p class="hero__subtitle">Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
+          <div class="hero__actions">
+            <a href="#" class="button button--primary">Explorar categorias</a>
+            <a href="tela_04_newsletter.html" class="button button--secondary">Assine a newsletter</a>
+          </div>
+        </div>
+        <div class="hero__media" aria-hidden="true"></div>
+      </section>
+
+      <!-- CATEGORIAS POPULARES -->
+      <section class="section">
+        <h2 class="section__title">Categorias Populares</h2>
+        <div class="grid grid--3">
+          <article class="card card--category">
+            <div class="card__media" aria-hidden="true"></div>
+            <div class="card__body"><h3 class="card__title">Work</h3></div>
+          </article>
+          <article class="card card--category">
+            <div class="card__media" aria-hidden="true"></div>
+            <div class="card__body"><h3 class="card__title">Books</h3></div>
+          </article>
+          <article class="card card--category">
+            <div class="card__media" aria-hidden="true"></div>
+            <div class="card__body"><h3 class="card__title">Techno</h3></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- TODAS AS CATEGORIAS -->
+      <section class="section">
+        <h2 class="section__title">Todas as Categorias</h2>
+        <div class="chip-list">
+          <a href="tela_02_categoria.html" class="chip">Negócios</a>
+          <a href="tela_02_categoria.html" class="chip">Techno</a>
+          <a href="tela_02_categoria.html" class="chip">Produtividade</a>
+          <a href="tela_02_categoria.html" class="chip">Filmes</a>
+          <a href="tela_02_categoria.html" class="chip">Lifestyle</a>
+          <a href="tela_02_categoria.html" class="chip">Educação</a>
+          <a href="tela_02_categoria.html" class="chip">Mailing</a>
+          <a href="tela_02_categoria.html" class="chip">eCommerce</a>
+          <a href="tela_02_categoria.html" class="chip">Alimentação</a>
+          <a href="tela_02_categoria.html" class="chip">Social</a>
+        </div>
+      </section>
+
+      <!-- DESTAQUES + ESCOLHAS DO EDITOR (2 colunas no desktop) -->
+      <div class="home-columns">
+        <section class="section">
+          <h2 class="section__title">Postagens em Destaque</h2>
+          <article class="card card--horizontal">
+            <div class="card__media" aria-hidden="true"></div>
+            <div class="card__body">
+              <p class="card__meta">31 Jul 2025 <span class="badge badge--feature">Destaque</span></p>
+              <h3 class="card__title">Erros de Design que Todos Devem Evitar</h3>
+              <p class="card__text">3 min de leitura</p>
+            </div>
+          </article>
+          <article class="card card--horizontal">
+            <div class="card__media" aria-hidden="true"></div>
+            <div class="card__body">
+              <p class="card__meta">31 Jul 2025 <span class="badge badge--feature">Destaque</span></p>
+              <h3 class="card__title">As Maiores Empresas por Receita</h3>
+            </div>
+          </article>
+        </section>
+        <aside class="panel">
+          <div class="panel__header"><h2 class="panel__title">Escolhas do Editor</h2></div>
+          <div class="panel__body">
+            <ul class="list">
+              <li class="list__item"><a href="#" class="list__link">O uso negativo da internet</a></li>
+              <li class="list__item"><a href="#" class="list__link">O segredo do brainstorm</a></li>
+              <li class="list__item"><a href="#" class="list__link">Escalar para pequenos negócios</a></li>
+              <li class="list__item"><a href="#" class="list__link">O futuro do trabalho remoto</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+  </main>
+
+  <!-- FOOTER (reutilizado em todas as telas) -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__tags" aria-label="Tags">
+        <a href="#" class="chip">Instagram</a>
+        <a href="#" class="chip">Work</a>
+        <a href="#" class="chip">Bags</a>
+        <a href="#" class="chip">Lamp</a>
+        <a href="#" class="chip">Books</a>
+      </nav>
+      <p class="footer__copyright">© 2025 Meu Site • Meu site</p>
+    </div>
+  </footer>
+  </div>
+</body>
+</html>

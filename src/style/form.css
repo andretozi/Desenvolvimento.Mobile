@@ -1,0 +1,51 @@
+/* =========================================================
+   form.css  —  Formulários: campos, inputs, textarea, checkbox e ações
+
+   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
+   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
+   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
+   ========================================================= */
+
+.form {
+}
+.form__field {
+}
+.form__label {
+}
+.form__input,
+.form__textarea {
+}
+.form__input::placeholder,
+.form__textarea::placeholder {
+}
+.form__input:focus,
+.form__textarea:focus {
+}
+.form__textarea {
+}
+
+/* Linha com 2 campos lado a lado (criar post) */
+.form__row {
+}
+.form__row .form__field {
+}
+
+/* Checkbox + rótulo */
+.form__check {
+}
+.form__check-input {
+}
+.form__check-label {
+}
+
+/* Ações e rodapé do formulário */
+.form__actions {
+}
+.form__footer {
+}
+.form__link {
+}
+.form__link:hover {
+}
+.form__sep {
+}

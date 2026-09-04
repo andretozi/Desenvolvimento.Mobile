@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HABIT — Admin: Fila de comentários (tela_10)</title>
+  <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+  <!-- tela_10 - Admin: Fila de comentários -->
+  <div class="page">
+  <!-- HEADER (reutilizado em todas as telas) -->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__start">
+        <a href="tela_01_home.html" class="header__brand">HABIT</a>
+        <nav class="nav" aria-label="Navegação principal">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="tela_01_home.html" class="nav__link">Início</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Páginas</a></li>
+            <li class="nav__item"><a href="tela_03_destaques.html" class="nav__link">Destaques</a></li>
+            <li class="nav__item"><a href="tela_04_newsletter.html" class="nav__link">Assinar</a></li>
+            <li class="nav__item"><a href="tela_05_admin_categorias.html" class="nav__link nav__link--active">Admin</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__end">
+        <form class="search" role="search">
+          <input class="search__input" type="search" placeholder="Buscar...">
+          <button class="search__button button button--secondary" type="submit">Buscar</button>
+        </form>
+        <a href="tela_12_login.html" class="button button--secondary">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page__main">
+      <div class="admin">
+        <aside class="admin__sidebar">
+          <nav class="menu" aria-label="Menu administrativo">
+            <h2 class="menu__title">Menu</h2>
+            <ul class="menu__list">
+              <li class="menu__item"><a href="tela_05_admin_categorias.html" class="menu__link">Categorias</a></li>
+              <li class="menu__item"><a href="tela_06_admin_criar_post.html" class="menu__link">Criar Post</a></li>
+              <li class="menu__item"><a href="tela_07_admin_escolhas_editor.html" class="menu__link">Escolhas do Editor</a></li>
+              <li class="menu__item"><a href="tela_08_admin_usuarios.html" class="menu__link">Usuários</a></li>
+              <li class="menu__item"><a href="tela_09_admin_fila_revisao.html" class="menu__link">Fila de revisão</a></li>
+              <li class="menu__item"><a href="tela_10_admin_fila_comentarios.html" class="menu__link menu__link--active">Fila de comentários</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <div class="admin__content">
+          <div class="stats">
+            <div class="stat"><span class="stat__label">Posts</span><span class="stat__value">128</span></div>
+            <div class="stat"><span class="stat__label">Visualizações</span><span class="stat__value">54k</span></div>
+            <div class="stat"><span class="stat__label">Inscritos</span><span class="stat__value">12k</span></div>
+            <div class="stat"><span class="stat__label">Pendências</span><span class="stat__value">7</span></div>
+          </div>
+          <div class="panel panel--admin">
+            <div class="panel__header">
+              <h1 class="panel__title">Fila de comentários</h1>
+            </div>
+            <div class="panel__body">
+              <div class="panel__search">
+                <input class="form__input" type="search" placeholder="Buscar comentários...">
+              </div>
+              <div class="table-wrap">
+                <table class="table">
+                  <thead class="table__head">
+                    <tr class="table__row">
+                      <th class="table__cell table__cell--head">Título</th>
+                      <th class="table__cell table__cell--head">Autor</th>
+                      <th class="table__cell table__cell--head">Status</th>
+                      <th class="table__cell table__cell--head">Ações</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                <tr class="table__row">
+                  <td class="table__cell">Comentário #1</td>
+                  <td class="table__cell">Usuário 1</td>
+                  <td class="table__cell"><span class="badge badge--warning">Em revisão</span></td>
+                  <td class="table__cell"><div class="table__actions"><button class="button button--secondary button--sm">Aprovar</button> <button class="button button--danger button--sm">Reprovar</button></div></td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Comentário #2</td>
+                  <td class="table__cell">Usuário 2</td>
+                  <td class="table__cell"><span class="badge badge--warning">Em revisão</span></td>
+                  <td class="table__cell"><div class="table__actions"><button class="button button--secondary button--sm">Aprovar</button> <button class="button button--danger button--sm">Reprovar</button></div></td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Comentário #3</td>
+                  <td class="table__cell">Usuário 3</td>
+                  <td class="table__cell"><span class="badge badge--warning">Em revisão</span></td>
+                  <td class="table__cell"><div class="table__actions"><button class="button button--secondary button--sm">Aprovar</button> <button class="button button--danger button--sm">Reprovar</button></div></td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Comentário #4</td>
+                  <td class="table__cell">Usuário 4</td>
+                  <td class="table__cell"><span class="badge badge--warning">Em revisão</span></td>
+                  <td class="table__cell"><div class="table__actions"><button class="button button--secondary button--sm">Aprovar</button> <button class="button button--danger button--sm">Reprovar</button></div></td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Comentário #5</td>
+                  <td class="table__cell">Usuário 5</td>
+                  <td class="table__cell"><span class="badge badge--warning">Em revisão</span></td>
+                  <td class="table__cell"><div class="table__actions"><button class="button button--secondary button--sm">Aprovar</button> <button class="button button--danger button--sm">Reprovar</button></div></td>
+                </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <!-- FOOTER (reutilizado em todas as telas) -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__tags" aria-label="Tags">
+        <a href="#" class="chip">Instagram</a>
+        <a href="#" class="chip">Work</a>
+        <a href="#" class="chip">Bags</a>
+        <a href="#" class="chip">Lamp</a>
+        <a href="#" class="chip">Books</a>
+      </nav>
+      <p class="footer__copyright">© 2025 Meu Site • Meu site</p>
+    </div>
+  </footer>
+  </div>
+</body>
+</html>

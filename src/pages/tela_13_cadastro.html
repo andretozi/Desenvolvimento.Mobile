@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HABIT — Criar Conta (tela_13)</title>
+  <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+  <!-- tela_13 - Criar Conta (cadastro) -->
+  <div class="page">
+  <!-- HEADER (reutilizado em todas as telas) -->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__start">
+        <a href="tela_01_home.html" class="header__brand">HABIT</a>
+        <nav class="nav" aria-label="Navegação principal">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="tela_01_home.html" class="nav__link">Início</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Páginas</a></li>
+            <li class="nav__item"><a href="tela_03_destaques.html" class="nav__link">Destaques</a></li>
+            <li class="nav__item"><a href="tela_04_newsletter.html" class="nav__link">Assinar</a></li>
+            <li class="nav__item"><a href="tela_05_admin_categorias.html" class="nav__link">Admin</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__end">
+        <form class="search" role="search">
+          <input class="search__input" type="search" placeholder="Buscar...">
+          <button class="search__button button button--secondary" type="submit">Buscar</button>
+        </form>
+        <a href="tela_12_login.html" class="button button--secondary">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page__main page__main--centered">
+      <div class="panel panel--narrow">
+        <div class="panel__header"><h1 class="panel__title">Criar Conta</h1></div>
+        <div class="panel__body">
+          <form class="form">
+            <div class="form__field"><input class="form__input" type="text" placeholder="Nome completo"></div>
+            <div class="form__field"><input class="form__input" type="email" placeholder="E-mail"></div>
+            <div class="form__field"><input class="form__input" type="password" placeholder="Senha"></div>
+            <div class="form__field"><input class="form__input" type="password" placeholder="Confirmar senha"></div>
+            <div class="form__check">
+              <input class="form__check-input" type="checkbox" id="termos">
+              <label class="form__check-label" for="termos">Concordo com os termos e a política de privacidade</label>
+            </div>
+            <div class="form__actions">
+              <button class="button button--primary" type="submit">Cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  </main>
+
+  <!-- FOOTER (reutilizado em todas as telas) -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__tags" aria-label="Tags">
+        <a href="#" class="chip">Instagram</a>
+        <a href="#" class="chip">Work</a>
+        <a href="#" class="chip">Bags</a>
+        <a href="#" class="chip">Lamp</a>
+        <a href="#" class="chip">Books</a>
+      </nav>
+      <p class="footer__copyright">© 2025 Meu Site • Meu site</p>
+    </div>
+  </footer>
+  </div>
+</body>
+</html>

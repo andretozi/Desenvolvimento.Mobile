@@ -1,0 +1,18 @@
+/* =========================================================
+   chip.css  —  Chips/tags: categorias, filtros e tags do rodapé
+
+   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
+   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
+   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
+   ========================================================= */
+
+.chip-list {
+}
+.chip {
+}
+.chip:hover {
+}
+
+/* Variação: ativo/selecionado */
+.chip--active {
+}

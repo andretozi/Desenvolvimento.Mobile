@@ -1,0 +1,20 @@
+/* =========================================================
+   hero.css  —  Hero da home (2 colunas no desktop: texto | imagem)
+
+   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
+   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
+   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
+   ========================================================= */
+
+.hero {
+}
+.hero__content {
+}
+.hero__title {
+}
+.hero__subtitle {
+}
+.hero__actions {
+}
+.hero__media {
+}

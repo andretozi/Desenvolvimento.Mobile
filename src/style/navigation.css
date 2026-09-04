@@ -1,0 +1,22 @@
+/* =========================================================
+   navigation.css  —  Navegação principal (menu do topo, em linha)
+
+   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
+   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
+   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
+   ========================================================= */
+
+.nav {
+  /* container do menu — sem estilo próprio necessário no desktop */
+}
+.nav__list {
+}
+.nav__item {
+  /* item da lista — sem estilo próprio necessário */
+}
+.nav__link {
+}
+.nav__link:hover {
+}
+.nav__link--active {
+}

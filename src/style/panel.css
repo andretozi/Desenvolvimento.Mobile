@@ -1,0 +1,26 @@
+/* =========================================================
+   panel.css  —  Painel: caixa branca com cabeçalho + corpo
+
+   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
+   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
+   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
+   ========================================================= */
+
+.panel {
+}
+.panel__header {
+}
+.panel__title {
+}
+.panel__body {
+}
+.panel__search {
+}
+
+/* Variação: estreito e centralizado (login, cadastro, newsletter) */
+.panel--narrow {
+}
+
+/* Variação: admin */
+.panel--admin {
+}

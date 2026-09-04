@@ -1,0 +1,70 @@
+/* =========================================================
+   base.css  —  Reset + container centralizado + utilitários
+   FORNECIDO (não é um componente BEM específico).
+   Layout pensado para DESKTOP (etapa 1). A adaptação mobile
+   (etapa 2) entra depois com @media — ver GUIA-DE-CLASSES.md.
+   ========================================================= */
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font-base);
+  font-size: var(--fs-md);
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; }
+ul { list-style: none; padding: 0; }
+input, textarea, select, button { font-family: inherit; }
+
+/* Página */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+/* Conteúdo centralizado (container) */
+.page__main {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+.page__main--centered {
+  justify-content: center;
+  align-items: center;
+}
+.page__actions {
+  display: flex;
+  justify-content: center;
+}
+
+/* Seções e títulos */
+.section { display: flex; flex-direction: column; gap: var(--space-4); }
+.section__title { font-size: var(--fs-xl); font-weight: var(--fw-bold); }
+.screen-title { font-size: var(--fs-2xl); font-weight: var(--fw-bold); }
+
+/* Grades utilitárias */
+.grid { display: grid; gap: var(--space-4); }
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--auto { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+
+/* Duas colunas da home (destaques | escolhas do editor) */
+.home-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-6);
+  align-items: start;
+}

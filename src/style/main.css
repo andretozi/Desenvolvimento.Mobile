@@ -1,0 +1,22 @@
+/* =========================================================
+   main.css  —  Agregador. Importa tudo na ordem correta.
+   Cada HTML linka SOMENTE este arquivo:
+   <link rel="stylesheet" href="../style/main.css">
+   ========================================================= */
+@import url('variables.css');
+@import url('base.css');
+@import url('header.css');
+@import url('navigation.css');
+@import url('button.css');
+@import url('chip.css');
+@import url('hero.css');
+@import url('card.css');
+@import url('panel.css');
+@import url('form.css');
+@import url('list.css');
+@import url('table.css');
+@import url('stats.css');
+@import url('badge.css');
+@import url('admin.css');
+@import url('profile.css');
+@import url('footer.css');

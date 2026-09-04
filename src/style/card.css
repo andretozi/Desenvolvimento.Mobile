@@ -1,0 +1,50 @@
+/* =========================================================
+   card.css  —  Card e variações (horizontal, categoria, post, compacto, destaque)
+
+   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
+   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
+   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
+   ========================================================= */
+
+.card {
+}
+.card__media {
+}
+.card__body {
+}
+.card__title {
+}
+.card__meta {
+}
+.card__text {
+}
+
+/* Variação: horizontal (imagem à esquerda) — destaques, busca, perfil */
+.card--horizontal {
+}
+.card--horizontal .card__media {
+}
+.card--horizontal .card__body {
+}
+
+/* Variação: categoria (home) */
+.card--category .card__media {
+}
+
+/* Variação: post (grades de categoria/destaques) */
+.card--post .card__media {
+}
+
+/* Variação: compacto (prevista para reuso em React) */
+.card--compact .card__media {
+}
+.card--compact .card__body {
+}
+
+/* Variação: destaque (prevista para reuso em React) */
+.card--featured {
+}
+
+/* Lista vertical de cards horizontais (busca, perfil) */
+.result-list {
+}

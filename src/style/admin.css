@@ -1,0 +1,32 @@
+/* =========================================================
+   admin.css  —  Layout administrativo DESKTOP (menu lateral | stats + painel)
+
+   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
+   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
+   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
+   ========================================================= */
+
+.admin {
+}
+.admin__sidebar {
+  /* coluna do menu lateral */
+}
+.admin__content {
+}
+
+/* Menu lateral (reutilizado nas telas 05 a 10) */
+.menu {
+}
+.menu__title {
+}
+.menu__list {
+}
+.menu__item {
+  /* item da lista — sem estilo próprio necessário */
+}
+.menu__link {
+}
+.menu__link:hover {
+}
+.menu__link--active {
+}

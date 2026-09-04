@@ -1,0 +1,28 @@
+/* =========================================================
+   header.css  —  Cabeçalho DESKTOP: marca + nav à esquerda, busca + entrar à direita
+
+   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
+   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
+   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
+   ========================================================= */
+
+.header {
+}
+.header__inner {
+}
+.header__start {
+}
+.header__end {
+}
+.header__brand {
+}
+
+/* Busca */
+.search {
+}
+.search__input {
+}
+.search__input::placeholder {
+}
+.search__button {
+}
