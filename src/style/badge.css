@@ -1,22 +1,17 @@
-/* =========================================================
-   badge.css  —  Selos de status (Ativo, Bloqueado, Em revisão, Destaque, etc.)
-
-   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
-   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
-   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
-   ========================================================= */
-
 .badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-pill);
+  background: var(--color-muted-soft);
+  color: var(--color-muted);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
 }
 
 /* Variações de status */
-.badge--success {
-}
-.badge--warning {
-}
-.badge--danger  {
-}
-.badge--muted   {
-}
-.badge--feature {
-}
+.badge--success { background: var(--color-success-soft); color: var(--color-success); }
+.badge--warning { background: var(--color-warning-soft); color: var(--color-warning); }
+.badge--danger  { background: var(--color-danger-soft);  color: var(--color-danger); }
+.badge--muted   { background: var(--color-muted-soft);   color: var(--color-muted); }
+.badge--feature { background: var(--color-primary-soft); color: var(--color-primary); }

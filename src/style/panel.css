@@ -1,26 +1,31 @@
-/* =========================================================
-   panel.css  —  Painel: caixa branca com cabeçalho + corpo
-
-   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
-   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
-   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
-   ========================================================= */
-
 .panel {
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
 }
 .panel__header {
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
 }
 .panel__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
 }
 .panel__body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
 }
-.panel__search {
-}
+.panel__search { margin-bottom: var(--space-1); }
 
 /* Variação: estreito e centralizado (login, cadastro, newsletter) */
 .panel--narrow {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
 }
 
 /* Variação: admin */
-.panel--admin {
-}
+.panel--admin {}

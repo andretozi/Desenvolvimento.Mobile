@@ -1,32 +1,53 @@
-/* =========================================================
-   admin.css  —  Layout administrativo DESKTOP (menu lateral | stats + painel)
-
-   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
-   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
-   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
-   ========================================================= */
-
 .admin {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  gap: var(--space-6);
+  align-items: start;
 }
 .admin__sidebar {
   /* coluna do menu lateral */
 }
 .admin__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
 }
 
 /* Menu lateral (reutilizado nas telas 05 a 10) */
 .menu {
+  padding: var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
 }
 .menu__title {
+  margin-bottom: var(--space-3);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
 }
 .menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
 }
 .menu__item {
-  /* item da lista — sem estilo próprio necessário */
+  display: flex;
+  gap: var(--space-2);
 }
+
 .menu__link {
+  display: block;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
 }
 .menu__link:hover {
+  background: var(--color-surface-2);
+  color: var(--color-text);
 }
 .menu__link--active {
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-weight: var(--fw-medium);
 }

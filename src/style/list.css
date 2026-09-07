@@ -1,31 +1,51 @@
-/* =========================================================
-   list.css  —  Listas: data-list (admin, com ações) e list (links)
-
-   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
-   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
-   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
-   ========================================================= */
-
 .data-list {
+  display: flex;
+  flex-direction: column;
 }
 .data-list__head {
+  padding: var(--space-2) 0;
+  margin-bottom: var(--space-1);
+  border-bottom: 2px solid var(--color-border);
 }
 .data-list__heading {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  color: var(--color-text);
 }
 .data-list__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
 }
 .data-list__label {
+  font-size: var(--fs-sm);
+  color: var(--color-text);
 }
 .data-list__actions {
+  display: flex;
+  gap: var(--space-2);
+  flex-shrink: 0;
 }
 
-/* Lista simples de links (Escolhas do Editor na home) */
+/* Lista simples de links */
 .list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
 }
 .list__item {
-  /* item da lista — sem estilo próprio necessário */
+  display: flex;
+  gap: var(--space-2);   /* espaço entre a bolinha e o texto */
+}
+.list__item::before {
+  content: "•";
+  color: #000000;   /* opcional: cor da bolinha */
 }
 .list__link {
+  font-size: var(--fs-sm);
+  color: #000000;
 }
-.list__link:hover {
-}
+.list__link:hover { text-decoration: underline; }

@@ -1,51 +1,71 @@
-/* =========================================================
-   form.css  —  Formulários: campos, inputs, textarea, checkbox e ações
-
-   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
-   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
-   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
-   ========================================================= */
-
 .form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
 }
 .form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
 }
 .form__label {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-text);
 }
 .form__input,
 .form__textarea {
+  width: 100%;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--fs-sm);
 }
 .form__input::placeholder,
-.form__textarea::placeholder {
-}
+.form__textarea::placeholder { color: var(--color-text-soft); }
 .form__input:focus,
 .form__textarea:focus {
+  outline: 2px solid var(--color-primary-soft);
+  border-color: var(--color-primary);
 }
 .form__textarea {
+  min-height: 160px;
+  resize: vertical;
 }
 
 /* Linha com 2 campos lado a lado (criar post) */
 .form__row {
+  display: flex;
+  gap: var(--space-3);
 }
-.form__row .form__field {
-}
+.form__row .form__field { flex: 1; }
 
 /* Checkbox + rótulo */
 .form__check {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
 }
-.form__check-input {
-}
+.form__check-input { margin-top: 3px; }
 .form__check-label {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
 }
 
 /* Ações e rodapé do formulário */
 .form__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
 }
 .form__footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-sm);
 }
-.form__link {
-}
-.form__link:hover {
-}
-.form__sep {
-}
+.form__link { color: var(--color-primary); }
+.form__link:hover { text-decoration: underline; }
+.form__sep { color: var(--color-text-soft); }

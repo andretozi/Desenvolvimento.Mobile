@@ -1,23 +1,28 @@
-/* =========================================================
-   table.css  —  Tabelas administrativas (usuários, revisão, comentários)
-
-   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
-   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
-   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
-   ========================================================= */
-
 .table-wrap {
+  overflow-x: auto;
 }
 .table {
+  width: 100%;
+  border-collapse: collapse;
 }
 .table__row {
-  /* linha (tr) — sem estilo próprio; a borda fica em .table__cell */
 }
 .table__cell {
+  padding: var(--space-3);
+  text-align: left;
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
 }
 .table__head .table__cell {
+  color: var(--color-text);
+  font-weight: var(--fw-bold);
+  border-bottom: 2px solid var(--color-border);
 }
 .table__cell--head {
+  font-size: var(--fs-xs);
 }
 .table__actions {
+  display: flex;
+  gap: var(--space-2);
 }

@@ -1,9 +1,3 @@
-/* =========================================================
-   base.css  —  Reset + container centralizado + utilitários
-   FORNECIDO (não é um componente BEM específico).
-   Layout pensado para DESKTOP (etapa 1). A adaptação mobile
-   (etapa 2) entra depois com @media — ver GUIA-DE-CLASSES.md.
-   ========================================================= */
 
 /* Reset */
 *, *::before, *::after { box-sizing: border-box; }

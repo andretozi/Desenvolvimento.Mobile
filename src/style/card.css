@@ -1,50 +1,73 @@
-/* =========================================================
-   card.css  —  Card e variações (horizontal, categoria, post, compacto, destaque)
-
-   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
-   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
-   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
-   ========================================================= */
-
 .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
 }
 .card__media {
+  height: 150px;
+  background: var(--color-placeholder);
 }
 .card__body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
 }
 .card__title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  line-height: 1.3;
 }
 .card__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
 }
 .card__text {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
 }
 
 /* Variação: horizontal (imagem à esquerda) — destaques, busca, perfil */
 .card--horizontal {
+  flex-direction: row;
 }
 .card--horizontal .card__media {
+  width: 140px;
+  min-height: 110px;
+  height: auto;
+  flex-shrink: 0;
+  align-self: stretch;
 }
 .card--horizontal .card__body {
+  justify-content: center;
 }
 
 /* Variação: categoria (home) */
-.card--category .card__media {
-}
+.card--category .card__media { height: 120px; }
 
 /* Variação: post (grades de categoria/destaques) */
-.card--post .card__media {
-}
+.card--post .card__media { height: 150px; }
 
 /* Variação: compacto (prevista para reuso em React) */
-.card--compact .card__media {
-}
-.card--compact .card__body {
-}
+.card--compact .card__media { height: 90px; }
+.card--compact .card__body { padding: var(--space-3); }
 
 /* Variação: destaque (prevista para reuso em React) */
 .card--featured {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary-soft), var(--shadow-md);
 }
 
 /* Lista vertical de cards horizontais (busca, perfil) */
 .result-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
 }

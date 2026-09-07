@@ -1,28 +1,46 @@
-/* =========================================================
-   header.css  —  Cabeçalho DESKTOP: marca + nav à esquerda, busca + entrar à direita
-
-   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
-   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
-   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
-   ========================================================= */
-
 .header {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
 }
 .header__inner {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
 }
 .header__start {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
 }
 .header__end {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
 }
 .header__brand {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  letter-spacing: .04em;
 }
 
 /* Busca */
 .search {
+  display: flex;
+  gap: var(--space-2);
 }
 .search__input {
+  width: 220px;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  font-size: var(--fs-sm);
 }
-.search__input::placeholder {
-}
-.search__button {
-}
+.search__input::placeholder { color: var(--color-text-soft); }
+.search__button { white-space: nowrap; }

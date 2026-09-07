@@ -1,18 +1,42 @@
-/* =========================================================
-   chip.css  —  Chips/tags: categorias, filtros e tags do rodapé
-
-   >> PREENCHA as PROPRIEDADES de cada seletor (versao DESKTOP). <<
-   Os seletores (classes BEM) ja vem mapeados a partir do HTML.
-   Consulte: GUIA-DE-CLASSES.md  |  Confira: GABARITO-CSS-DESKTOP.md
-   ========================================================= */
-
 .chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
 }
 .chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  white-space: nowrap;
+  cursor: pointer;
 }
 .chip:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 /* Variação: ativo/selecionado */
 .chip--active {
+  background: var(--color-primary-soft);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  font-weight: var(--fw-medium);
+}
+
+.chip-list--grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-3);
+}
+.chip-list--grid .chip {
+  width: 100%;
+  padding: var(--space-4);
+  font-size: var(--fs-md);
+  border-radius: var(--radius-md);
 }
