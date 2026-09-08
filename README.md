@@ -150,19 +150,3 @@ Os HTML carregam **apenas** o `main.css`, que importa os demais na ordem correta
 Abra qualquer arquivo de `src/pages/` no navegador (ex.: `src/pages/tela_01_home.html`).
 A modelagem atual é **desktop** (janela larga). A adaptação **mobile** é a etapa seguinte, feita com
 *media queries* (`@media`), preservando os mesmos elementos e componentes.
-
----
-
-## 7. Checklist da entrega
-
-- [x] 14 telas de baixa fidelidade em `src/wireframes/`.
-- [x] Principais fluxos representados.
-- [x] Elementos recorrentes identificados.
-- [x] Componentes e variações documentados.
-- [x] Arquivos CSS organizados por responsabilidade.
-- [x] Classes seguindo o padrão BEM.
-- [ ] CSS desktop preenchido (etapa 1).
-- [ ] CSS mobile com media queries (etapa 2).
-- [ ] Integrantes preenchidos no README.
-- [ ] Todos os integrantes realizaram commits.
-- [ ] Repositório público no GitHub.
